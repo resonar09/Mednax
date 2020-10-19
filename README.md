@@ -1,3 +1,7 @@
+# Mednax
+This is a POC project that uses the user API on JsonPlaceholder - https://jsonplaceholder.typicode.com/users/ to demonstrate basic React experience and testing.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
