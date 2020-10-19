@@ -1,9 +1,15 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the correct header', () => {
+  const { getByText} = render(<App />);
+  const headerElement =  getByText(/User Table/i);
+  expect(headerElement).toBeInTheDocument();
+});
+
+test('renders a table', () => {
+  render(<App />);
+  const tableElement =  screen.getByTestId('table');
+  expect(tableElement).toBeInTheDocument();
 });
